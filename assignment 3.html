@@ -1,0 +1,52 @@
+<html>
+<style>
+.screen{ height:40px;width:100px; font-size:25;color:green;text-align:right;background-color:yellow;}
+.btn { height:25px;width:40px; font-size:20;color:blue }
+.btn:hover {color:black}
+</style>
+
+
+<h2><u><b><center> Arithmetic Operations </b></center></u></h2><br><br>
+<body>
+<center>
+<input id=t1 class=screen>    <input id=t2 class=screen><br><br>
+<input type=button value=+ onclick=sum() class=btn >
+<input type=button value=- onclick=diff() class=btn >
+<input type=button value=* onclick=mul() class=btn >
+<input type=button value=/ onclick=div() class=btn ><br><br>
+<output id=out1 /> 
+</center>
+
+<script>
+function sum()
+{
+ a=parseInt(t1.value)
+ b=parseInt(t2.value)
+ c=a+b
+ out1.value='Addition is: ' + c
+}
+function diff()
+{
+ a=parseInt(t1.value)
+ b=parseInt(t2.value)
+ c=a-b
+ out1.value='Subtraction is: ' + c
+}
+function mul()
+{
+ a=parseInt(t1.value)
+ b=parseInt(t2.value)
+ c=a*b
+ out1.value='Multiplication is: ' + c
+}
+function div()
+{
+ a=parseInt(t1.value)
+ b=parseInt(t2.value)
+ c=a/b
+ out1.value='Division is: ' + c
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<u>STUDENT MARKS</u> <br><br>
+Maths     <input id=m1 /> <br>
+English   <input id=m2 /> <br>
+Hindi     <input id=m3 /> <br>
+Physics   <input id=m4 /> <br>
+Chemistry <input id=m5 /> <br>
+<input type=button value=result onclick="abc()"/><br>
+<output id=out1 />
+
+<script>
+function abc()
+{
+a=parseInt(m1.value);
+b=parseInt(m2.value);
+c=parseInt(m3.value);
+d=parseInt(m4.value);
+e=parseInt(m5.value);
+f=a+b+c+d+e;
+g=f/5;
+out1.value='total:'+f+' percent:'+g
+}
+</script>

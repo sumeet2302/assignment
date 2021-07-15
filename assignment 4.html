@@ -1,0 +1,31 @@
+<html>
+<center>
+<h2><u><b> Finding greatest no. among the given numbers</h2></u></b>
+<br><br>
+
+<style>
+.screen { height:50px;width:135px; font-size:25;text-align:right;color:red;background-color:yellow }
+.btn { height:50px;width:100px; font-size:15;color:blue }
+.r {font-size:30; color:green}
+</style>
+
+<input id=t1 class=screen>
+<input id=t2 class=screen>
+<input id=t3 class=screen><br><br><br><br>
+<input type=button value=RESULT onclick=abc() class=btn><br><br><br><br>
+<output id=out1 class=r />
+
+<script>
+function abc()
+{
+a=parseInt(t1.value);
+b=parseInt(t2.value);
+c=parseInt(t3.value);
+
+if (a>b && a>c) d=a;
+else if (b>c && b>a) d=b;
+else d=c;
+out1.value='The greatest of given three numbers is :  ' +  d
+}
+</script>
+</html>
